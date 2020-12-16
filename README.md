@@ -1,5 +1,5 @@
 # Discpp.js
-A minimalistic discord api wrapper library
+A minimalistic discord api wrapper library.
 This library requires request (npm i request), request-promise-native (npm i request-promise-native), and websocket (npm i websocket).
 ***
 ### Discpp.js is a minimalist discord API wrapper, and a javascript port of the soon to come discpp.cpp library
