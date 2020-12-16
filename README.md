@@ -26,6 +26,12 @@ Discpp.js only has one API, postMessage. We may add more in the future.
 
 To send a message, use the function
 ```
-discpp.postMessage(channel_id, message);
+discpp.postMessage("CHANNEL_ID, message);
 ```
-The message parameter can be a message object (https://discord.com/developers/docs/resources/channel#message-object) or a string. If you want to post an embed, ise the object syntax.
+The message parameter can be a message object (https://discord.com/developers/docs/resources/channel#message-object) or a string. If you want to post an embed, use the object syntax.
+
+## Running your bot
+The run your bot, add this line **after** setting the callback functions.
+```
+discpp.connect("BOT_TOKEN");
+```
