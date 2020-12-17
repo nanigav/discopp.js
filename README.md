@@ -3,7 +3,7 @@ A minimalistic discord api wrapper library for node.js.
 This library requires request (npm i request), and websocket (npm i websocket).
 ***
 
-***NOTE:*** To use the example, download the files discpp.js, example.js, and example.json, and then keep them in the same folder. Then, go to example.json and replace TOKEN_GOES_HERE with your bot's token, replace HELP_COMMAND_NAME with your preferred help command name, save, and run `node example.js` in the terminal. For more info on the example go to the bottom of the file.
+***NOTE:*** To use the example, download the files discpp.js, example.js, and example.json, and then keep them in the same folder. Then, go to example.json and replace TOKEN_GOES_HERE with your bot's token, replace HELP_COMMAND_NAME with your preferred help command name, save, and run `node example.js` in the terminal. For more info on the example go to the bottom of the file. The example is an extension of this project by another user: https://github.com/Lioncat2002/LionCatBot/.
 
 #### Discpp.js is a minimalist discord API wrapper, and a javascript port of the soon to come discpp.cpp library
 Currently, discpp only suports a few events, listed below.
