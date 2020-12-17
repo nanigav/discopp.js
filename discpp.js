@@ -75,7 +75,7 @@ module.exports = {
   },
   onGuildLeave: function(func){
     onguildleavefunc = func;
-  }
+  },
   connect: (p_token) => {
     const client = new webSocketClient();
     token = p_token; //set token to one provided
