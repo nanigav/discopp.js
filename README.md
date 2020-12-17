@@ -1,9 +1,9 @@
 # Discpp.js
 A minimalistic discord api wrapper library.
-This library requires request (npm i request), request-promise-native (npm i request-promise-native), and websocket (npm i websocket).
+This library requires request (npm i request), and websocket (npm i websocket).
 ***
 ### Discpp.js is a minimalist discord API wrapper, and a javascript port of the soon to come discpp.cpp library
-Currently, discpp only suports two events- on ready and on messange send
+Currently, discpp only suports a few events, listed below.
 
 Add the discpp.js file to your project and type
 ```
@@ -21,6 +21,13 @@ To set the on message send callback, add
 discpp.onMessage(message_send_callback);//called when a message in sent in a dm channel or guild channel
 ```
 The mesage callback takes one argument, the message object.
+
+The two other callbacks are:
+```
+discpp.onGuildJoin(on_guild_join_callback);//called when bot joins guild, callback gets the object of the joined guild as an argument
+discpp.onGuildLeave(on_guild_leave_callback);//called when the bot leaves a guild, callback gets the object of the guild that it left as an argument
+```
+The guild object is documented here- https://discord.com/developers/docs/resources/guild#guild-object.
 
 ## Discpp.js APIs
 Discpp.js only has one API, postMessage. We may add more in the future.
