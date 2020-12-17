@@ -1,5 +1,6 @@
 {
   "token": "TOKEN_GOES_HERE",
+  "help": "HELP_COMMAND_NAME",
   "all": {
     "-ping": ["pong", "a ping-pong command"],
     "-howdy": ["Howdy $NAME$!", "a greeting"],
