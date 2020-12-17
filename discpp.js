@@ -1,3 +1,9 @@
+/*
+MIT License
+
+Copyright (c) 2020 Villain_Mahil
+*/
+
 const req = require('request'); //use `npm i request` for this
 const webSocketClient = require('websocket').client; //use `npm i websocket` for this
 let token;
