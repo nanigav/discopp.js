@@ -1,20 +1,11 @@
 {
   "token": "TOKEN_GOES_HERE",
   "all": {
-    "-lol": ["loool bruv", "looool"],
-    "-rargs": ["yes we are pototosa", "whadya expect"],
-    "-bruv": ["who are U bruvvin at eh!", "HUUH!"],
-    "-howdy": ["Howdy $NAME$!", "an old town road greeting"],
-    "-bring me water": ["im not ur slave go get it urself", "get urself some water"],
-    "-im dying": ["ya think I care", "Oh really!"],
-    "-invite": ["My invite link: https://discord.com/api/oauth2/authorize?client_id=766516542589370379&permissions=67439681&scope=bot","ya realy wanna"],
+    "-ping": ["pong", "a ping-pong command"],
+    "-howdy": ["Howdy $NAME$!", "a greeting"],
     "-embed": ["EMBED-An embed!$*$553426$*$This is the description!$*$Message content", "an embed"]
   },
   "738263333517394030": {
-    "-private": ["YES IVE OBLITERATED THEM FILES SIR!", "a secret...."]
-  },
-  "788314601632169995": {
-    "-hihihi": ["hi hi hi hi hi hi hi hi", "enough?"],
-    "-who is ur boss": ["I SERVE ONLY THE GREAT LORDS MAHIL, ASHWATH, AND ESHAN.", "my boss(es)"]
+    "-private": ["i only work in the specified guild", "a secret...."]
   }
 }
