@@ -38,6 +38,9 @@ discpp.postMessage("CHANNEL_ID, message);
 ```
 The message parameter can be a message object (https://discord.com/developers/docs/resources/channel#message-object) or a string. If you want to post an embed, use the object syntax.
 
+## Discpp.js cache
+The discpp cache stores all the guilds that the bot is currently in. It is present at `discpp.cache.guilds`.
+
 ## Running your bot
 The run your bot, add this line **after** setting the callback functions.
 ```
