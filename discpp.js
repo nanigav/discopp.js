@@ -10,7 +10,7 @@ let token;
 let guilds;
 let cache = {};
 cache.guilds = new Map();
-let heartbeatno = 0; //if this exceeds 1 reconnect
+let heartbeatno = 0; //if this exceeds 2 reconnect
 
 let identity = { //identity
     "op": 2,
@@ -110,7 +110,7 @@ module.exports = {
                   "op": 1,
                   "d": sequence
                 }));
-                if(heartbeatno > 1){
+                if(heartbeatno > 2){
                   connection.sendUTF(JSON.stringify({
                     "op": 6,
                     "d": {
@@ -162,6 +162,7 @@ module.exports = {
                   }
                 ));
               }else{
+                console.log("The client was not able to connect. Maybe an invalid token was provided");
                 client.abort(); //some problem, maybe in invalid token was provided
                 return;
               }
