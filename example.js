@@ -1,6 +1,6 @@
 const discpp = require('./discpp.js');
 const fs = require('fs');
-const commands = JSON.parse(fs.readFileSync("commands.json"));
+const commands = JSON.parse(fs.readFileSync("example.json"));
 
 const onReady = function(){
   console.log("ready");
@@ -64,4 +64,4 @@ const joinGuild = function(guild){
 discpp.onMessage(onMesg);
 discpp.onReady(onReady);
 discpp.onGuildJoin(joinGuild);
-discpp.connect("NzY2NTE2NTQyNTg5MzcwMzc5.X4kgKA.h0W-MonmUkVHnJgR4KrfRw3XRaI");
+discpp.connect(commands.token);
