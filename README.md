@@ -51,7 +51,7 @@ discpp.connect("BOT_TOKEN");
 ```
 
 ## The example bot
-If you don't want to code a bot, you can use the example. **DO NOT EDIT** example.js. To add your own commands, add a new field under "all" or a public command (the command will be useable in any server) or under a field with the server's id for a private command (it only works in that specific server). Don't forget to add the comma unless it is the last field, in which case there should be no comma. If you are experiencing an error, check if all the commas are present. Here is an example command field:
+If you don't want to code a bot, you can use the example. **DO NOT EDIT** example.js. To add your own commands, add a new field under "all" or a public command (the command will be useable in any server) for under a field with the server's id for a private command (it only works in that specific server). Don't forget to add the comma unless it is the last field, in which case there should be no comma. If you are experiencing an error, check if all the commas are present. Here is an example command field:
 ```
 "name of command": ["what the bot should reply. if you add $NAME$ here it will get replaced by the username of the person who used the command when the bot sends the message", "the description of the command, this comes when you use the help command that is specified in your example.json file."]
 ```
