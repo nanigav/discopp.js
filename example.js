@@ -9,7 +9,7 @@ const onReady = function(){
 const onMesg = function(mesg){
   if(mesg.author.bot)return;
   mesg.content = mesg.content.trim();
-  if(mesg.content == "-help"){
+  if(mesg.content == commands.help){
     let helpmesg = "";
     for (const thing in commands["all"]){
       helpmesg += "`" + thing + "`" + ": " + commands["all"][thing][1] + "\n";
