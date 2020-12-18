@@ -82,6 +82,7 @@ module.exports = {
 
     client.on('connectFailed', (error) => {
       console.log('Discpp.js says: \nConnection Error' + error.toString());
+      client.abort();
     });
 
     client.on('connect', (connection) => {
