@@ -183,13 +183,13 @@ module.exports = {
                     onreadyfunc();
                   }
                 }else if(guilds == 0){
-                  onguildjoinfunc(Object.assign({}, data.d);
+                  onguildjoinfunc(Object.assign({}, data.d));
                 }
                 cache.guilds.set(data.d.id, data.d);
               }else if (data.t == "GUILD_UPDATE"){
                 cache.guilds.set(data.d.id, data.d);
               }else if (data.t == "GUILD_DELETE"){
-                onguildleavefunc(Object.assign({}, cache.guilds.get(data.d.id));
+                onguildleavefunc(Object.assign({}, cache.guilds.get(data.d.id)));
                 cache.guilds.delete(data.d.id);
               }
               break;
