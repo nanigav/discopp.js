@@ -1,4 +1,4 @@
-const discpp = require('./discpp.js');
+const discopp = require('./discopp.js');
 const fs = require('fs');
 const commands = JSON.parse(fs.readFileSync("example.json"));
 
@@ -19,7 +19,7 @@ const onMesg = function(mesg){
         helpmesg += "`" + thing + "`" + ": " + commands[mesg.guild_id][thing][1] + "\n";
       }
     }
-    restjs.postMessage(mesg.channel_id, helpmesg);
+    discopp.postMessage(mesg.channel_id, helpmesg);
     return;
   }
   let entered = commands["all"][mesg.content]
@@ -53,7 +53,7 @@ const onMesg = function(mesg){
     if(typeof entered == "string"){
       entered = entered.replace(/\$NAME\$/, mesg.author.username);
     }
-    restjs.postMessage(mesg.channel_id, entered);
+    discopp.postMessage(mesg.channel_id, entered);
   }
 }
 
@@ -61,7 +61,7 @@ const joinGuild = function(guild){
   console.log(guild.name);
 }
 
-discpp.onMessage(onMesg);
-discpp.onReady(onReady);
-discpp.onGuildJoin(joinGuild);
-discpp.connect(commands.token);
+discopp.onMessage(onMesg);
+discopp.onReady(onReady);
+discopp.onGuildJoin(joinGuild);
+discopp.connect(commands.token);
