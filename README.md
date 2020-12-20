@@ -1,53 +1,53 @@
-# Discpp.js
+# DisCOPP.js
 A minimalistic discord api wrapper library for node.js.
 This library requires request (npm i request), and websocket (npm i websocket).
 ***
 
 ***NOTE:*** To use the example, download the files discpp.js, example.js, and example.json, and then keep them in the same folder. Then, go to example.json and replace TOKEN_GOES_HERE with your bot's token, replace HELP_COMMAND_NAME with your preferred help command name, save, and run `node example.js` in the terminal. For more info on the example go to the bottom of the file. The example is an extension of this project by another user: https://github.com/Lioncat2002/LionCatBot/.
 
-#### Discpp.js is a minimalist discord API wrapper, and a javascript port of the soon to come discpp.cpp library
-Currently, discpp only suports a few events, listed below.
+#### DisCOPP.js is a minimalist discord API wrapper, and a javascript port of the soon to come DisCOPP.cpp library
+Currently, discopp only suports a few events, listed below.
 
-Add the discpp.js file to your project and type
+Add the discopp.js file to your project and type
 ```
-const discpp = require("./discpp.js");
+const discopp = require("./discopp.js");
 ```
 ***
-### Discpp.js is event based.
+### DisCOPP.js is event based.
 To set the on ready callback, add
 ```
-discpp.onReady(ready_callback_function);//called when the bot becomes ready
+discopp.onReady(ready_callback_function);//called when the bot becomes ready
 ```
 
 To set the on message send callback, add
 ```
-discpp.onMessage(message_send_callback);//called when a message in sent in a dm channel or guild channel
+discopp.onMessage(message_send_callback);//called when a message in sent in a dm channel or guild channel
 ```
 The mesage callback takes one argument, the message object.
 
 The two other callbacks are:
 ```
-discpp.onGuildJoin(on_guild_join_callback);//called when bot joins guild, callback gets the object of the joined guild as an argument
-discpp.onGuildLeave(on_guild_leave_callback);//called when the bot leaves a guild, callback gets the object of the guild that it left as an argument
+discopp.onGuildJoin(on_guild_join_callback);//called when bot joins guild, callback gets the object of the joined guild as an argument
+discopp.onGuildLeave(on_guild_leave_callback);//called when the bot leaves a guild, callback gets the object of the guild that it left as an argument
 ```
 The guild object is documented here- https://discord.com/developers/docs/resources/guild#guild-object.
 
-### Discpp.js APIs
-Discpp.js only has one API, postMessage. We may add more in the future.
+### DisCOPP.js APIs
+DisCOPP.js only has one API, postMessage. We may add more in the future.
 
 To send a message, use the function
 ```
-discpp.postMessage("CHANNEL_ID, message);
+discopp.postMessage("CHANNEL_ID, message);
 ```
 The message parameter can be a message object (https://discord.com/developers/docs/resources/channel#message-object) or a string. If you want to post an embed, use the object syntax.
 
-### Discpp.js cache
-The discpp cache stores all the guilds that the bot is currently in. It is present at `discpp.cache.guilds`.
+### DisCOPP.js cache
+The discopp cache stores all the guilds that the bot is currently in. It is present at `discopp.cache.guilds`.
 
 ### Running your bot
 The run your bot, add this line **after** setting the callback functions.
 ```
-discpp.connect("BOT_TOKEN");
+discopp.connect("BOT_TOKEN");
 ```
 
 ## The example bot
